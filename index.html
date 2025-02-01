@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+
+<body>``
+    <div class="quiz-container">
+        <!-- Start Screen -->
+        <div id="start-screen">
+            <h2>Enter Your Details</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your name">
+
+            <label for="category">Choose Category:</label>
+            <select id="category">
+                <option value="9">General Knowledge</option>
+                <option value="23">History</option>
+                <option value="21">Sports</option>
+                <option value="32">Cartoon & Animation</option>
+                <option value="11">Films</option>
+            </select>
+
+            <button id="start-button">Start Quiz</button>
+            <button id="high-score-button">Show High Scores</button>
+            <button id="show-category-scores-btn">Show Categorical Scores</button>
+            <p id="high-score-message"></p>
+        </div>
+
+        <!-- Quiz Section -->
+        <div id="quiz-section" style="display: none;">
+            <h2 id="welcome-message"></h2>
+            <div id="question-number"></div>
+            <div id="question"></div>
+            <div id="answers"></div>
+            <button id="next-button" style="display: none;">Next Question</button>
+        </div>
+
+        <!-- High Scores Table -->
+        <div id="high-scores-section" style="display: none;">
+            <h2>High Scores</h2>
+            <table id="high-scores-table">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Category</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <h2 id="category-scores-title" style="display:none;">Show Categorical Scores</h2>
+            <table class="table" id="category-scores-table" style="display:none;">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>General Knowledge</th>
+                        <th>History</th>
+                        <th>Sports</th>
+                        <th>Cartoon & Animation</th>
+                        <th>Films</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
